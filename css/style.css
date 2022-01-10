@@ -134,6 +134,10 @@ body {
     background-color: black;
 }
 
+.card-title{
+    height: 50px;
+}
+
 
 /* Partie clients*/
 
