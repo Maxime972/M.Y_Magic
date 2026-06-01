@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/parallax.js" defer></script>
+    <script src="./js/videoPlayer.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
 
 </head>
@@ -85,8 +87,12 @@
         <section id="video" class="row my-5">
             <h2 class="text-center">Vidéo</h2>
             <div class="col-12">
-                <video oncontextmenu="return false" poster="/images/posterVideo.png" controls src="videos/presentation.mp4" width="100%"
-                    controlslist="nodownload noremoteplayback" disablePictureInPicture></video>
+                <video id="videoPlayer" controls width="100%" oncontextmenu="return false" poster="/images/posterVideo.png"
+                    controlsList="nodownload noremoteplayback" disablePictureInPicture></video>
+                <div id="qualityMenu" style="margin-top:10px;">
+                    <label for="qualitySelect">Qualité :</label>
+                    <select id="qualitySelect"></select>
+                </div>
             </div>
         </section>
 

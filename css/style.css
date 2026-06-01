@@ -89,6 +89,21 @@ body {
 }
 
 
+/* Partie vidéo*/
+
+#qualityMenu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+}
+
+#qualitySelect {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
 /* Partie citation*/
 
 #citation {
